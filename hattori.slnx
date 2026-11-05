@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="Hattori.Core/Hattori.Core.csproj" />
+  <Project Path="Hattori.Persistence/Hattori.Persistence.csproj" />
+  <Project Path="Hattori.Web/Hattori.Web.csproj" />
+  <Project Path="Hattori.Web.Tests/Hattori.Web.Tests.csproj" />
+  <Project Path="Hattori.Tools/Hattori.Tools.csproj" />
+</Solution>

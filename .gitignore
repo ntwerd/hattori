@@ -1,0 +1,9 @@
+bin/
+obj/
+logs/
+*.user
+*.DotSettings.user
+.idea/
+.vs/
+.vscode/
+.env

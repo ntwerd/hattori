@@ -1,0 +1,11 @@
+**/bin
+**/obj
+.git
+.env
+.idea
+.vs
+.vscode
+logs
+.agents
+.claude
+docs

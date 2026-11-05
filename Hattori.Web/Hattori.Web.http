@@ -1,0 +1,73 @@
+### Hattori todo API example requests. The app runs at http://localhost:5000 in development.
+
+@host = http://localhost:5000
+
+### Register an account (sets the auth cookie). The identity API's own /account/register is disabled.
+POST {{host}}/api/account/register
+Content-Type: application/json
+
+{
+  "email": "first@example.com",
+  "password": "Passw0rd!"
+}
+
+### Who am I
+GET {{host}}/api/account/me
+
+### Sign in again through the identity API endpoints
+POST {{host}}/account/login
+Content-Type: application/json
+
+{
+  "email": "first@example.com",
+  "password": "Passw0rd!"
+}
+
+### Create a todo list
+POST {{host}}/api/todo-lists
+Content-Type: application/json
+
+{
+  "name": "Chores",
+  "color": "#3A7BD5"
+}
+
+### List my todo lists
+GET {{host}}/api/todo-lists
+
+### Create a todo item (paste a list ID from above)
+POST {{host}}/api/todo-items
+Content-Type: application/json
+
+{
+  "todoListId": "00000000-0000-0000-0000-000000000000",
+  "title": "Take out the trash",
+  "notes": "Both bins this week",
+  "dueDate": "2026-11-06"
+}
+
+### List my todo items, optionally filtered to one list
+GET {{host}}/api/todo-items
+
+### Complete an item (paste an item ID from above)
+PUT {{host}}/api/todo-items/00000000-0000-0000-0000-000000000000
+Content-Type: application/json
+
+{
+  "title": "Take out the trash",
+  "notes": "Both bins this week",
+  "isCompleted": true,
+  "dueDate": "2026-11-06"
+}
+
+### Soft-delete an item
+DELETE {{host}}/api/todo-items/00000000-0000-0000-0000-000000000000
+
+### Soft-delete a list
+DELETE {{host}}/api/todo-lists/00000000-0000-0000-0000-000000000000
+
+### Health check (anonymous)
+GET {{host}}/health
+
+### API documentation UI (development only)
+GET {{host}}/scalar/v1

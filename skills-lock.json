@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "skills": {
+    "helloyeew-dotnet-skill": {
+      "source": "HelloYeew/dotnet-skill",
+      "sourceType": "github",
+      "skillPath": "SKILL.md",
+      "computedHash": "fe558c60fd055b7d988b962c2f23c1abfeb1f588d677b3054f4cc31178382861"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup Label="Project">
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <OutputType>Exe</OutputType>
+  </PropertyGroup>
+  <ItemGroup Label="Framework">
+    <!-- The same ASP.NET Core types the web project uses: identity, HttpContext, hosting. -->
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+  <ItemGroup Label="Project references">
+    <ProjectReference Include="..\Hattori.Core\Hattori.Core.csproj" />
+    <ProjectReference Include="..\Hattori.Persistence\Hattori.Persistence.csproj" />
+  </ItemGroup>
+  <ItemGroup Label="Packages">
+    <PackageReference Include="System.CommandLine" Version="2.0.14" />
+  </ItemGroup>
+</Project>
