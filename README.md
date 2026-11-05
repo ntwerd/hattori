@@ -14,6 +14,12 @@ A todo application API service on ASP.NET Core, built the way [HelloYeew's .NET 
 
 References point one way: `Web → Persistence → Core`, `Web → Core`, `Tools → Persistence + Core`. All EF Core packages live in `.Persistence`.
 
+## Documentation
+
+- [docs/architecture/](docs/architecture/README.md) — layered architecture documentation, from system overview down to a single request's lifecycle, with reading paths
+- [docs/architecture/decisions/](docs/architecture/decisions/README.md) — the decision records behind the design
+- [docs/architecture/08-maintainers-guide.md](docs/architecture/08-maintainers-guide.md) — recipes: add an endpoint, a migration, a setting, a permission, a test
+
 ## Prerequisites
 
 - .NET SDK 10

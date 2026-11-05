@@ -60,6 +60,8 @@ Tools (`Hattori.Tools`): `dotnet run -- roles seed`, `users create-admin --email
 - Moments are UTC (`DateTime.UtcNow`, `timestamp with time zone`); due dates are `DateOnly`. `DateTime.Now`/`TimeZoneInfo.Local` stay out.
 - Tests run against real PostgreSQL on port 5433, not the EF in-memory provider.
 
+Architecture detail (system overview down to a single request's lifecycle) lives in `docs/architecture/`; the change recipes — add an endpoint, a migration, a setting, a permission, a test — are in `docs/architecture/08-maintainers-guide.md`.
+
 ## Skill management
 
 - `.agents/skills/` is the canonical copy; `.claude/skills/helloyeew-dotnet-skill`
